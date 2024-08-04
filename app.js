@@ -7,7 +7,7 @@ const apikey = 'kxm8XVhLi058pgVeX';
 
 function sendEmail(event) {
     event.preventDefault();
-    emailjs.init(apikey); // Cambié a apikey
+    emailjs.init(apikey); 
 
     emailjs.sendForm(serviceId, templateId, contactForm, apikey)
         .then(result => Swal.fire("Su mensaje se ha enviado con éxito!"))
